@@ -23,10 +23,10 @@ include evidence for every awarded point.
 You need Node.js 20+ and any coding workflow you want to evaluate. You do not
 need a UIZZE account.
 
-[Open a clean copy in GitHub Codespaces](https://codespaces.new/samuelbushi/uizze-ui-slop-benchmark), or run it locally:
+[Open a clean copy in GitHub Codespaces](https://codespaces.new/uizze/uizze-ui-slop-benchmark), or run it locally:
 
 ```bash
-git clone https://github.com/samuelbushi/uizze-ui-slop-benchmark.git
+git clone https://github.com/uizze/uizze-ui-slop-benchmark.git
 cd uizze-ui-slop-benchmark
 npm test
 npm run verify
