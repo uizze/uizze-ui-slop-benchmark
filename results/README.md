@@ -5,3 +5,5 @@ from implying comparisons that have not been run.
 
 To publish a result, include a completed submission JSON and link to inspectable
 implementation evidence. Run `npm run score -- result.json` before publishing.
+
+Open a [benchmark-result intake](https://github.com/uizze/uizze-ui-slop-benchmark/issues/new?template=benchmark-result.yml) when the evidence is ready. A maintainer verifies the task fingerprint, score calculation, and public evidence before any result is published. This is not a leaderboard or an endorsement.
