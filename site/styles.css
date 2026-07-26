@@ -134,11 +134,66 @@ h1 span {
   margin: 0;
 }
 
+.section-intro {
+  font-size: clamp(20px, 2.5vw, 30px);
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin: 0 0 44px 72px;
+  max-width: 850px;
+}
+
 h2 {
   font-size: clamp(34px, 5vw, 64px);
   letter-spacing: -0.055em;
   line-height: 0.95;
   margin: 0;
+}
+
+.quick-start-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-left: 72px;
+}
+
+.quick-start-step {
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+
+.step-index {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  margin: 0 0 28px;
+}
+
+.quick-start-step h3 {
+  font-size: clamp(24px, 3vw, 38px);
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+  margin: 0 0 20px;
+  max-width: 340px;
+}
+
+.quick-start-step pre {
+  font-size: 13px;
+  margin: 0 0 18px;
+  max-width: none;
+  padding: 20px;
+  white-space: pre-wrap;
+}
+
+.quick-start-step > p:last-child {
+  color: var(--muted);
+  line-height: 1.45;
+  margin: 0;
+  max-width: 540px;
+}
+
+.quick-start-step > p:last-child code {
+  color: var(--ink);
+  font-size: 0.9em;
 }
 
 .task-row {
@@ -242,8 +297,14 @@ footer {
 
   .contract ol,
   pre,
-  .run > p {
+  .run > p,
+  .section-intro,
+  .quick-start-grid {
     margin-left: 0;
+  }
+
+  .quick-start-grid {
+    grid-template-columns: 1fr;
   }
 
   footer {
