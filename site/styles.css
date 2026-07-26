@@ -262,6 +262,10 @@ pre {
   margin-left: 72px;
 }
 
+.continuation .actions {
+  margin-left: 72px;
+}
+
 footer {
   align-items: center;
   display: flex;
@@ -299,7 +303,8 @@ footer {
   pre,
   .run > p,
   .section-intro,
-  .quick-start-grid {
+  .quick-start-grid,
+  .continuation .actions {
     margin-left: 0;
   }
 
