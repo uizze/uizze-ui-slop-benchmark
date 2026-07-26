@@ -56,6 +56,11 @@ The verifier rejects unknown criteria, missing evidence, changed task files,
 non-binary scores, and arithmetic mismatches. It prints the task fingerprint
 that must be recorded with the result.
 
+## Publish a verifiable result
+
+The benchmark deliberately has no self-reported winners. When you have run one
+task under the fixed protocol, open the [benchmark-result intake](https://github.com/uizze/uizze-ui-slop-benchmark/issues/new?template=benchmark-result.yml) with the completed submission JSON, exact task fingerprint, public implementation evidence, and desktop/mobile checks. A maintainer must verify the evidence before publishing a result; an intake is not a ranking or endorsement.
+
 ## What the score means
 
 Each task has ten observable criteria worth ten points each. An evaluator awards
