@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="A free, reproducible benchmark for product-specific UI finish quality." />
-    <meta property="og:title" content="STOP UI SLOP — UIZZE benchmark" />
-    <meta property="og:description" content="Three fixed UI tasks. Identical prompts. Observable criteria. No made-up winners." />
+    <meta name="description" content="A free, reproducible UI finish gate for coding agents. Catch generic UI before it ships." />
+    <meta property="og:title" content="If your UI screams AI, your app is dead." />
+    <meta property="og:description" content="A free, reproducible UI finish gate for coding agents. Catch generic UI before it ships." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://uizze.github.io/uizze-ui-slop-benchmark/" />
-    <title>STOP UI SLOP — UIZZE benchmark</title>
+    <meta property="og:image" content="https://uizze.com/landing/anti-ui-slop-skill-banner.png" />
+    <title>STOP UI SLOP — free UIZZE finish gate</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -19,18 +20,42 @@
 
     <main>
       <section class="hero">
-        <p class="eyebrow">UI finish quality, measured without pretending taste is a number</p>
+        <p class="eyebrow">A free, reproducible finish gate for coding agents</p>
         <h1>STOP<br />UI <span>SLOP.</span></h1>
-        <p class="lede">Three fixed product tasks. Identical prompts and starter states. Ten observable criteria per task. Evidence required for every point.</p>
+        <p class="lede">Stop letting capable coding agents ship the same generic interface. Give them a real finish gate before users see it.</p>
         <div class="actions">
-          <a class="primary" href="https://github.com/uizze/uizze-ui-slop-benchmark#run-it-for-free">Run the benchmark</a>
-          <a class="secondary" href="https://github.com/uizze/uizze-ui-slop-benchmark/blob/main/METHODOLOGY.md">Read the protocol</a>
+          <a class="primary" href="#quick-start">Run the free gate</a>
+          <a class="secondary" href="https://github.com/uizze/uizze-ui-slop-benchmark#run-it-for-free">Run the benchmark</a>
+        </div>
+      </section>
+
+      <section id="quick-start" aria-labelledby="quick-start-heading" class="section quick-start">
+        <div class="section-heading">
+          <p>01</p>
+          <h2 id="quick-start-heading">Make the agent prove it.</h2>
+        </div>
+        <p class="section-intro">The useful free loop: give your coding agent a finish gate, then make it fix what it finds. No UIZZE account, token, or source upload is required.</p>
+        <div class="quick-start-grid">
+          <article class="quick-start-step">
+            <p class="step-index">01</p>
+            <h3>Install the free finish gate</h3>
+            <pre><code>npx skills add https://uizze.com --skill anti-ui-slop</code></pre>
+            <p>Works with Codex, Claude Code, Cursor, Copilot, and compatible coding agents.</p>
+          </article>
+          <article class="quick-start-step">
+            <p class="step-index">02</p>
+            <h3>Use this on the next screen</h3>
+            <pre><code>use anti-ui-slop on the screen I just built.
+find generic choices, missing states, and inert controls.
+fix them before calling it done.</code></pre>
+            <p>For a direct rendered HTML/CSS check, add the free no-token preview: <code>codex mcp add uizze-preview --url https://uizze.com/mcp/preview</code>.</p>
+          </article>
         </div>
       </section>
 
       <section aria-labelledby="tasks-heading" class="section">
         <div class="section-heading">
-          <p>01</p>
+          <p>02</p>
           <h2 id="tasks-heading">The fixed tasks</h2>
         </div>
         <div class="task-row">
@@ -55,7 +80,7 @@
 
       <section aria-labelledby="contract-heading" class="section contract">
         <div class="section-heading">
-          <p>02</p>
+          <p>03</p>
           <h2 id="contract-heading">The reproducibility contract</h2>
         </div>
         <ol>
@@ -69,7 +94,7 @@
 
       <section aria-labelledby="run-heading" class="section run">
         <div class="section-heading">
-          <p>03</p>
+          <p>04</p>
           <h2 id="run-heading">Run it free</h2>
         </div>
         <pre><code>git clone https://github.com/uizze/uizze-ui-slop-benchmark.git
